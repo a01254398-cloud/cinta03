@@ -1,0 +1,14 @@
+CINTA 03 — cómo subirla a Netlify con IA
+
+Carpeta:
+  index.html                   la cinta
+  netlify/functions/ojo.mjs    el cerebro del ojo (Claude: ve tu cámara y platica)
+  netlify/functions/voz.mjs    la voz del ojo (voz de IA grave y susurrada)
+
+Llaves (Netlify > tu proyecto > Project configuration > Environment variables):
+  ANTHROPIC_API_KEY   obligatoria para que el ojo piense   (console.anthropic.com > API keys)
+  OPENAI_API_KEY      opcional, para la voz de IA          (platform.openai.com > API keys)
+  ALLOWED_ORIGIN      opcional, ej. https://papasfritasdebrandon.netlify.app
+
+Sin llaves la cinta funciona igual, con las frases de guion y la voz del navegador.
+Pon un límite de gasto mensual en las consolas de Anthropic y OpenAI.
